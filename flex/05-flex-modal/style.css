@@ -61,12 +61,14 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  display: inline-block;
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+  display: inline-block;
 }
 
 .header {
@@ -78,24 +80,25 @@ button.cancel {
 .middle {
   display: flex;
   flex-direction: column;
-  flex: 1 10 auto;
+  flex: 1 12 auto;
 }
 
 .button-container{
   display: flex;
-  gap: 0px;
   justify-content: left;
+  gap: 5px;
 }
 .header-box{
   display: flex;
+  justify-content: space-between;
 }
 
 button.close-button{
   justify-content: right;
 }
 
-/* .header,
-.text,
-.close-button {
-  margin: 8px 0px;
-} */
+.header-box,
+.button-container,
+.text{
+  margin: 5px;
+}
